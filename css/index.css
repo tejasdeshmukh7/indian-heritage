@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {  
+  width: 95%;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 20px;
+  /* border: 1px solid #000; */
+}
+
+body {
+  background-color: lightgray;
+}
+
+header {
+  min-height: 80px;
+  position: sticky;
+  top: 0;
+  background: lightsalmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  z-index: 2;
+}
+
+.logo {
+  height: 90%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+   width: 5vw;
+}
+
+.logo h1 {
+  font-size: 3vw;
+  color: brown;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+nav ul li {
+  width: fit-content;
+   height: 50px;
+  text-align: center;
+  padding: 5px;
+}
+
+nav ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: brown;
+   font-size: 2vw;
+  font-weight: bolder;
+}
+
+nav ul li:hover {
+  color: aqua;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+a:hover{
+  color: crimson;
+}
+#idx-out{
+  display: none;
+}
+#h-out{
+  display: none;
+}
+#c-out{
+  display: none;
+}
+
+/* body */
+
+.slider {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider img {
+  position: absolute;
+  width: 95%;
+  margin: auto;
+  height: 550px;
+  border-radius: 15px;
+  z-index: -1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.slider-text {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.slider-text h1 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #8b5a00;
+}
+
+.scroll-info {
+  display: flex;
+  width: max-content;
+  gap: 25px;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scroll-info:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.card p{
+  padding: 5px;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* historical & cultural page  */
+
+
+.breaker{
+  
+  font-size: 1vw;
+  color: lightcoral;
+}
+
+.img-info{
+    width: 95vw;
+    min-height: 300px;
+    /* border: 1px solid #bf2f2f; */
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.image{
+    width: 45vw;
+    min-height: 200px;
+    padding: 20px;
+}
+.image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.info{
+    width: 40vw;
+    min-height: 200px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.info p{
+    text-align: center;
+}
+.info h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 25px;
+  text-align: center;
+  
+}
+
+/* media query */
+
+@media only Screen and (max-width:850px){
+  header {
+  flex-direction: column;
+}
+.logo{
+  width: 45vw;
+}
+.logo img {
+  width: 8vw;
+}
+.logo h1 {
+  font-size: 4vw;
+}
+nav{
+ width: 60vw; 
+}
+nav ul{
+  width: 60vw;
+  gap:40px;
+}
+nav ul li a {
+  font-size: 3vw;
+}
+.img-info{
+  width: 90vw;
+  flex-direction: column-reverse;
+}
+.image{
+  width: 90vw;
+}
+.info{
+  width: 90vw;
+}
+
+
+}
+
+@media only screen and (max-width:550px){
+ header{
+  width: 100vw;
+ }
+  .logo{
+  width: 50vw;
+ }
+.logo img {
+  width: 10vw;
+}
+.logo h1 {
+  font-size: 4vw;
+}
+nav{
+ width: 60vw; 
+}
+nav ul{
+  width: 60vw;
+  gap:10px;
+}
+nav ul li a {
+  font-size: 3vw;
+}
+
+}

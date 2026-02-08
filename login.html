@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Heritage🧡</title>
+    <link rel="stylesheet" href="./css/log.css">
+    <script src="./js/login.js"></script>
+</head>
+<body >
+     <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="img">
+            <h1>Indian Heritage🧡</h1>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="./index.html">Home</a></li>
+        <li><a href="./historical.html">Historical</a></li>
+         <li><a href="./Cultural.html">Cultural</a></li>
+            <li id="login" ><a  href="./login.html">Login</a></li>
+         <li id="logout" hidden><a  href="./user.html" >Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box" id="login1">
+        <img src="./images/bg3.jpg" alt="img">
+        <div class="form">
+            <!-- <img src="/images/login-side1.png" alt=""> -->
+             <h2>Login</h2>
+             <br><br>
+            
+                <label for="email">Email</label>   
+                <input type="text" name="email" value="" id="email" placeholder="Enter Email">
+                <br><br>
+                 <label for="pass">Password</label>   
+                <input type="password" name="pass" value="" id="pass" placeholder="Enter Password"><br>
+                 <span id="sp"></span>
+                <br><br>
+               <button onclick="login()">Login </button><br><br>
+               <h3  onclick="signupPage()">Don't have Account? Sign Up</h3>
+               <!-- <button onclick="signup()">Sign up</button> -->
+
+        </div>
+    </div>
+
+    <div class="box2" id="signup1">
+        <img src="./images/bg3.jpg" alt="img">
+        <div class="form">
+            <!-- <img src="/images/login-side1.png" alt=""> -->
+             <h2>sign up</h2>
+             <br><br>
+            
+                <label for="Name">Username</label>   
+                <input type="text" name="sname" id="sname" placeholder="Enter email">
+                <br><br>
+                 <label for="email">Email</label>   
+                <input type="text" name="semail" id="semail" placeholder="Enter email">
+                <br><br>
+               
+                 <label for="pass">Password</label>  
+                <input type="password" name="spass" id="spass" placeholder="Enter Password">
+                <br><br><br>
+                <button onclick="signup()">Sign up</button><br><br>
+                <h3  onclick="loginPage()">Already have Account? Log in</h3>
+
+            
+        </div>
+    </div>
+ 
+
+     <footer>
+    <h2>Indian Heritage🧡 | By Tejas & Samadhan</h2>
+  </footer>
+</body>
+</html>

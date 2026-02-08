@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Heritage🧡</title>
+    <link rel="stylesheet" href="./css/log.css">
+    <script src="./js/login.js"></script>
+</head>
+<body onload="user()" >
+     <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="img">
+            <h1>Indian Heritage🧡</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+        <li><a href="./historical.html">Historical</a></li>
+         <li><a href="./cultural.html">Cultural</a></li>
+        <li id="login" hidden><a  href="./login.html">Login</a></li>
+         <li id="logout" ><a id="a" href="./user.html" >Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box" id="login">
+        <img src="./images/bg3.jpg" alt="img">
+        <div class="form">
+            <img src="/images/user.svg" alt=""><br>
+             <h2 id="username">Welcome </h2>
+             <br><br>
+             <label >Name: <span id="un"></span></label>
+             <br>
+             <label >Email: <span id="ue"></span></label>
+             <br><br>
+             <input type="button" onclick="logout()" value="LogOut">
+             
+        </div>
+    </div>
+
+   
+
+     <footer>
+    <h2>Indian Heritage🧡 | By Tejas & Samadhan</h2>
+  </footer>
+
+<script>
+    function user(){
+         let lastU=JSON.parse(localStorage.getItem("lastUser"));
+        let obj=JSON.parse(localStorage.getItem(lastU));
+        let ue=document.getElementById("ue");
+        let un=document.getElementById("un");
+        let h2=document.getElementById("username");
+        let a=document.getElementById("a");
+        a.innerHTML=`Hello,${obj.name}`;
+        h2.innerHTML=h2.innerHTML+obj.name ;
+
+        un.style.color="red";
+        ue.innerHTML=obj.email;
+
+        ue.style.color="red";
+        un.innerHTML=obj.name;
+    }
+</script>
+
+</body>
+</html>
