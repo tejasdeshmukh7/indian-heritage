@@ -20,7 +20,7 @@ header {
   min-height: 80px;
   position: sticky;
   top: 0;
-  background: lightsalmon;
+  background: #F4A261;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@ header {
 
 .logo h1 {
   font-size: 3vw;
-  color: brown;
+  color:  #1D3557;
 }
 
 nav ul {
@@ -62,13 +62,13 @@ nav ul li {
 nav ul li a {
   padding: 10px;
   text-decoration: none;
-  color: brown;
+  color: #1D3557;
   font-size: 2vw;
   font-weight: bolder;
 }
 
 nav ul li:hover {
-  color: aqua;
+  /* color: aqua; */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -78,7 +78,7 @@ nav ul li:hover {
 }
 
 a:hover {
-  color: crimson;
+  color: #7A1F2B;
 }
 
 #idx-out {
@@ -251,7 +251,7 @@ section h2 {
 
 
 footer {
-  background: #222;
+  background: #1D3557;
   color: #ccc;
   padding: 25px;
   text-align: center;

@@ -3,12 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body{
+  background: lightgray;
+}
 header {
   min-height: 80px;
   position: sticky;
   top: 0;
-  background: lightsalmon;
+  background: #F4A261;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +33,7 @@ header {
 
 .logo h1 {
   font-size: 3vw;
-  color: brown;
+  color: #1D3557;
 }
 
 nav ul {
@@ -51,7 +53,7 @@ nav ul li a {
   padding: 10px;
   text-decoration: none;
   /* color: #222; */
-  color: brown;
+  color: #1D3557;
   font-size: 2vw;
   font-weight: bolder;
 }
@@ -68,7 +70,7 @@ nav ul li:hover {
 }
 
 a:hover {
-  color: crimson;
+  color: #7A1F2B;
 }
 
 .box {
