@@ -284,6 +284,8 @@ footer {
   nav ul {
     width: 60vw;
     gap: 40px;
+     /* align-items: center; */
+    justify-content: center;
   }
 
   nav ul li a {
@@ -330,6 +332,7 @@ footer {
   nav ul {
     width: 60vw;
     gap: 10px;
+    justify-content: center;
   }
 
   nav ul li a {

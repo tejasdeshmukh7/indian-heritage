@@ -257,6 +257,7 @@ footer {
 
   nav {
     width: 60vw;
+    justify-content: center;
   }
 
   nav ul {
